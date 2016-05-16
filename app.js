@@ -17,7 +17,7 @@ var gmAPI = new GoogleMapsAPI(publicConfig);
 
 bot.on('message', function (msg, match) {
   var fromId = msg.from.id;
-  console.log(msg);
+  
   
   if(msg.location) {
       
