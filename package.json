@@ -1,0 +1,19 @@
+{
+  "name": "weath-bot",
+  "version": "1.0.0",
+  "description": "Weather Telegram bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borapop/weather-telegram-bot.git"
+  },
+  "author": "borapop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borapop/weather-telegram-bot/issues"
+  },
+  "homepage": "https://github.com/borapop/weather-telegram-bot#readme"
+}
