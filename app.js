@@ -37,7 +37,7 @@ bot.on('message', function (msg, match) {
 
 bot.on('inline_query', function(msg, match){
   if (msg.query == '') {
-    console.log(msg);
+    
     if (msg.location) {
       getCurrentWeather(msg.location.latitude, msg.location.longitude,
         function(temperature, windSpeed, summary){
@@ -104,7 +104,7 @@ function getCoordinates(query, callback) {
   gmAPI.geocode({
     "address": query
   }, function(err, res) {
-    console.log(res);
+    
     if (!err && res.results[0]) {
       callback(res.results[0]);
     } 
