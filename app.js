@@ -8,15 +8,23 @@ var Weather = require('./lib/weather');
 var View = require('./lib/view');
 
 bot.on('message', function(msg, match){
-  Weather.getByQuery(msg.text, function(err, weatherData, geoData) {
-    var message = View.makeMessage(err, weatherData, geoData);
-    if (message) {
-      bot.sendMessage(msg.from.id, message, {
-        parse_mode: "HTML"
-      });
-    }
-   
-  });
+  
+  if (msg.text == '/start') {
+    bot.sendMessage(msg.from.id, View.startMessage, {
+      parse_mode: "HTML"
+    });
+  } else {
+    Weather.getByQuery(msg.text, function(err, weatherData, geoData) {
+      var message = View.makeMessage(err, weatherData, geoData);
+      if (message) {
+        bot.sendMessage(msg.from.id, message, {
+          parse_mode: "HTML"
+        });
+      }
+     
+    });
+  }
+  
 });
 
 bot.on('location', function(msg, match){
