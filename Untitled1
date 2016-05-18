@@ -1,7 +1,7 @@
 {
     "forecastToken" : "6ff2f7e14243ec46205629a378428100",
     "telegramToken" : "230122066:AAEfcd-ekNlg3foHwQbKfvzVCxbulOA61i8",
-    "googleMapsToken" : "AIzaSyCxcfb3T7_7g6YVvPxrqgEqpaQA1HdAmBc",
+    "googleMapsToken" : "AIzaSyCxёT7_7g6YVvPxrqgEqpaQA1HdAmBc",
     "icons": {
         "clear-day" : "☀",
         "clear-night" : "✨",
@@ -11,7 +11,7 @@
         "wind" : "💨",
         "fog" : "🌫",
         "cloudy" : "☁",
-        "partly-cloudy-day" : "⛅",
-        "partly-cloudy-night" : "☁️"
+        "partly-cloudy-day" : "️⛅️️",
+        "partly-cloudy-nig" : "☁️"
     }
 }
